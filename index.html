@@ -19,7 +19,7 @@
     <button type="submit">送信</button>
   </form>
 
-  <!-- ここから JavaScript を追加します -->
+  <!-- ここからJavaScriptを追加します -->
   <script>
     document.getElementById("quoteForm").addEventListener("submit", function(event) {
       event.preventDefault();
@@ -32,8 +32,8 @@
         price: document.getElementById("price").value
       };
 
-      // ※ここをあなたのGASのウェブアプリのURLに置き換えてください！
-      fetch("https://script.google.com/macros/s/あなたの実際のURL/dev", {
+      // GASのウェブアプリURLにデータを送信
+      fetch("https://script.google.com/macros/s/AKfycbxcMtXe9mmKamrua021yVq6wnuPWyN5hMebyX4b9FCXsxArBm6Gs_gADJC5cWu81ms/exec", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -49,6 +49,6 @@
       });
     });
   </script>
-  <!-- ここまで JavaScript -->
+  <!-- ここまでJavaScript -->
 </body>
 </html>
